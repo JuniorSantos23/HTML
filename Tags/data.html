@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+</head>
+<body>
+   
+    <h1>data</h1>
+
+    <p>Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome. <br>
+        Guarda informações que não são visíveis para o usuário, mas podem ser recuperadas com JS.
+    </p> <br><br>
+
+    <img src="/assets/data.png" alt=""> <br><br>
+    <img src="/assets/data1.png" alt=""> <br><br>
+    <img src="/assets/data2.png" alt=""> <br><br>
+
+    <ul>
+        <li data-id="1" data-email="juniorsantos@gmail.com">Junior Santos</li>
+        <li data-id="2" data-email="arthursouto@gmail.com">Arthur Soutto</li>
+    </ul>
+
+
+
+    <script>
+
+        document.querySelectorAll('li').forEach(liEl => {
+            console.log(liEl.dataset);
+        })
+
+    </script>
+
+</body>
+</html>
